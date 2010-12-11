@@ -7,7 +7,8 @@ servers = (
     chatnet = "Undernet";
     port = "6667";
   },
-  { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
+  { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; 
+    autoconnect="yes" },
   { 
     address = "irc.quakenet.org";
     chatnet = "QuakeNet";
@@ -23,6 +24,11 @@ servers = (
   { address = "irc.rizon.net"; chatnet = "Rizon"; port = "6667"; },
   { address = "irc.link-net.org"; chatnet = "LinkNet"; port = "6667"; },
   { address = "silc.silcnet.org"; chatnet = "SILC"; port = "706"; },
+  { address = "irc.spotchat.org"; 
+    chatnet = "SpotChat"; 
+    port = "6667";
+    autoconnect = "yes";
+  },
   {
     address = "irc.freenode.net";
     chatnet = "FreeNode";
@@ -96,6 +102,7 @@ chatnets = {
     max_whois = "30";
   };
   SILC = { type = "SILC"; };
+  SpotChat = { type = "IRC"; };
   FreeNode = {
     type = "IRC";
     autosendcmd = "/msg NickServ identify pt142309; wait 2000";
@@ -106,6 +113,8 @@ channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
   { name = "silc"; chatnet = "silc"; autojoin = "No"; },
   { name = "#ubuntu-sg"; chatnet = "FreeNode"; autojoin = "yes"; }
+  { name = "#linuxmint.com"; chatnet = "SpotChat"; autojoin = "yes"; }
+  { name = "#wdtv"; chatnet = "DALnet"; autojoin = "yes"; }
 );
 
 aliases = {
