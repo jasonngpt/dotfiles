@@ -7,7 +7,7 @@ servers = (
     port = "6667";
   },
   { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; 
-    autoconnect="yes" },
+    autoconnect="yes"; },
   { address = "irc.oftc.net"; chatnet = "OFTC"; port = "6667"; },
   { address = "irc.webchat.org"; chatnet = "WebChat"; port = "6667"; },
   { address = "irc.spotchat.org"; 
@@ -73,7 +73,8 @@ chatnets = {
 channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
   { name = "#ubuntu-sg"; chatnet = "FreeNode"; autojoin = "yes"; }
-  { name = "#linuxmint-debian"; chatnet = "SpotChat"; autojoin = "yes"; }
+  { name = "#linuxmint-debian"; chatnet = "SpotChat"; autojoin = "no"; }
+  { name = "#linuxmint.com"; chatnet = "SpotChat"; autojoin = "yes"; }
   { name = "#wdtv"; chatnet = "DALnet"; autojoin = "yes"; }
 );
 
