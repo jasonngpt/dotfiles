@@ -74,7 +74,7 @@ channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
   { name = "#ubuntu-sg"; chatnet = "FreeNode"; autojoin = "yes"; }
   { name = "#linuxmint-debian"; chatnet = "SpotChat"; autojoin = "no"; }
-  { name = "#linuxmint.com"; chatnet = "SpotChat"; autojoin = "yes"; }
+  { name = "#linuxmint-help"; chatnet = "SpotChat"; autojoin = "yes"; }
   { name = "#wdtv"; chatnet = "DALnet"; autojoin = "yes"; }
 );
 
