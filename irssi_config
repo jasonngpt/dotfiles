@@ -8,7 +8,7 @@ servers = (
   },
   { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; 
     autoconnect="yes"; },
-  { address = "irc.oftc.net"; chatnet = "OFTC"; port = "6667"; autoconnect="yes"; },
+  { address = "irc.oftc.net"; chatnet = "OFTC"; port = "6667"; },
   { address = "irc.webchat.org"; chatnet = "WebChat"; port = "6667"; },
   { address = "irc.spotchat.org"; 
     chatnet = "SpotChat"; 
@@ -72,11 +72,12 @@ chatnets = {
 
 channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
-  { name = "#ubuntu-sg"; chatnet = "FreeNode"; autojoin = "yes"; }
+  { name = "#ubuntu-sg"; chatnet = "FreeNode"; autojoin = "no"; }
   { name = "#linuxmint-debian"; chatnet = "SpotChat"; autojoin = "no"; }
-  { name = "#linuxmint-help"; chatnet = "SpotChat"; autojoin = "yes"; }
+  { name = "#linuxmint-help"; chatnet = "SpotChat"; autojoin = "no"; }
   { name = "#wdtv"; chatnet = "DALnet"; autojoin = "yes"; }
-  { name = "#pentadactyl"; chatnet = "OFTC"; autojoin = "yes"; }
+  { name = "#fedora"; chatnet = "FreeNode"; autojoin = "yes"; }
+  { name = "#fedora-social"; chatnet = "FreeNode"; autojoin = "yes"; }
 );
 
 aliases = {
