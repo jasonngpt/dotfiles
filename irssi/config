@@ -75,9 +75,9 @@ channels = (
   { name = "#ubuntu-sg"; chatnet = "FreeNode"; autojoin = "no"; }
   { name = "#linuxmint-debian"; chatnet = "SpotChat"; autojoin = "no"; }
   { name = "#linuxmint-help"; chatnet = "SpotChat"; autojoin = "no"; }
-  { name = "#wdtv"; chatnet = "DALnet"; autojoin = "yes"; }
-  { name = "#fedora"; chatnet = "FreeNode"; autojoin = "yes"; }
-  { name = "#fedora-social"; chatnet = "FreeNode"; autojoin = "yes"; }
+  { name = "#wdtv"; chatnet = "DALnet"; autojoin = "no"; }
+  { name = "#fedora"; chatnet = "FreeNode"; autojoin = "no"; }
+  { name = "#fedora-social"; chatnet = "FreeNode"; autojoin = "no"; }
 );
 
 aliases = {
