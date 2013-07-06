@@ -1,10 +1,6 @@
 #!/bin/sh
 # Setup Script 
-<<<<<<< HEAD
-# Jason Ng PT <jason@simplonlabs.com>
-=======
 # Jason Ng PT <me@jasonngpt.com>
->>>>>>> 8ce032d5dfbdce59e2087fb0c384803dcab654ea
 
 clear
 echo "Welcome to Setup Script"
