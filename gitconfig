@@ -1,0 +1,5 @@
+[user]
+	name = Jason Ng PT
+	email = me@jasonngpt.com
+[credential]
+	helper = cache

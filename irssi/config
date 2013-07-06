@@ -73,11 +73,8 @@ chatnets = {
 channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
   { name = "#ubuntu-sg"; chatnet = "FreeNode"; autojoin = "no"; }
-  { name = "#linuxmint-debian"; chatnet = "SpotChat"; autojoin = "no"; }
   { name = "#linuxmint-help"; chatnet = "SpotChat"; autojoin = "no"; }
   { name = "#wdtv"; chatnet = "DALnet"; autojoin = "no"; }
-  { name = "#fedora"; chatnet = "FreeNode"; autojoin = "no"; }
-  { name = "#fedora-social"; chatnet = "FreeNode"; autojoin = "no"; }
 );
 
 aliases = {
@@ -254,3 +251,4 @@ settings = {
   };
 };
 hilights = ( { text = "nick"; nick = "yes"; word = "yes"; } );
+
