@@ -28,8 +28,8 @@ echo "Changing Shell for User to zsh.."
 chsh -s /bin/zsh
 
 echo
-echo "Install zlib first.."
-sudo apt-get install libssl-dev zlib1g-dev
+echo "Install zlib and readline for rails first.."
+sudo apt-get install libssl-dev zlib1g-dev libreadline-dev
 
 echo "Checking out rbenv and setting up environment.."
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
