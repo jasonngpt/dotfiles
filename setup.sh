@@ -31,6 +31,10 @@ echo "Installing perlbrew.."
 curl -kL http://install.perlbrew.pl | bash
 echo "perlbrew done. pls install perl.."
 
+echo "Installing nvm.."
+curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+echo "nvm done. pls install node.."
+
 echo
 echo "Install zlib and readline for rails first.."
 sudo apt-get install libssl-dev zlib1g-dev libreadline-dev
