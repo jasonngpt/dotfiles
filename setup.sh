@@ -27,6 +27,10 @@ echo
 echo "Changing Shell for User to zsh.."
 chsh -s /bin/zsh
 
+echo "Installing perlbrew.."
+curl -kL http://install.perlbrew.pl | bash
+echo "perlbrew done. pls install perl.."
+
 echo
 echo "Install zlib and readline for rails first.."
 sudo apt-get install libssl-dev zlib1g-dev libreadline-dev

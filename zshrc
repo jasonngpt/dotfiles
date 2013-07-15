@@ -37,7 +37,13 @@ alias updateall="sudo apt-get update && sudo apt-get upgrade"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
 
 # Customize to your needs...
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Perlbrew
+source ~/perl5/perlbrew/etc/bashrc
+
+[[ -s /home/jason/.nvm/nvm.sh ]] && . /home/jason/.nvm/nvm.sh # This loads NVM
