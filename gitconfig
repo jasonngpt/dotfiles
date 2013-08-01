@@ -3,3 +3,5 @@
 	email = me@jasonngpt.com
 [credential]
 	helper = cache
+[push]
+	default = matching
