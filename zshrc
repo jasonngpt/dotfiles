@@ -44,6 +44,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # Perlbrew
-source ~/perl5/perlbrew/etc/bashrc
+#source ~/perl5/perlbrew/etc/bashrc
 
-[[ -s /home/jason/.nvm/nvm.sh ]] && . /home/jason/.nvm/nvm.sh # This loads NVM
+#[[ -s /home/jason/.nvm/nvm.sh ]] && . /home/jason/.nvm/nvm.sh # This loads NVM
