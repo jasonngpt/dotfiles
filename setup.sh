@@ -5,8 +5,8 @@
 clear
 echo "Welcome to Setup Script"
 echo
-echo "Starting to Install git, vim, tmux, zsh, irssi, curl, terminator.."
-sudo apt-get install git vim tmux zsh irssi curl terminator
+echo "Starting to Install git, vim, tmux, zsh, irssi, curl, terminator and g++ for compiling.."
+sudo apt-get install git vim tmux zsh irssi curl terminator g++
 
 echo
 echo "Checking out Jason Ng PT dotfiles.."
@@ -48,3 +48,6 @@ echo "rbenv done and configured. pls install new ruby version i.e. rbenv install
 
 echo "Change Irssi Password.."
 vi ~/.dotfiles/irssi/config
+
+echo "Installing additional libraries for nokogiri (ruby) and curb (ruby).."
+sudo apt-get install libxml2 libxml2-dev libxslt1-dev libcurl3 libcurl3-gnutls libcurl4-openssl-dev
