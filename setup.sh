@@ -12,6 +12,9 @@ echo
 echo "Checking out Jason Ng PT dotfiles.."
 git clone https://github.com/jasonngpt/dotfiles.git ~/.dotfiles
 
+echo "Cloning Vundle from Github.."
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
 echo
 echo "Checking out oh-my-zsh.."
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
@@ -23,6 +26,10 @@ ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/irssi ~/.irssi
+
+echo 
+echo ":BundleInstall vim plugins from Vundle.."
+vim
 
 echo
 echo "Changing Shell for User to zsh.."

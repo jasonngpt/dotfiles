@@ -1,4 +1,15 @@
 set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+" Github repos
+Bundle 'tpope/vim-fugitive'
+
+filetype plugin indent on
 
 set backspace=indent,eol,start
 
