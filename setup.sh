@@ -53,6 +53,12 @@ echo "Checking out ruby-build.."
 git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo "rbenv done and configured. pls install new ruby version i.e. rbenv install 2.0.0-p0"
 
+echo "Cloning plenv and setting up environment.."
+git clone git://github.com/tokuhirom/plenv.git ~/.plenv
+echo "Cloning perl-build.."
+git clone git://github.com/tokuhirom/Perl-Build.git ~/.plenv/plugins/perl-build/
+echo "plenv done and configured. pls install new perl version i.e. plenv install 5.18.1"
+
 echo "Change Irssi Password.."
 vi ~/.dotfiles/irssi/config
 
