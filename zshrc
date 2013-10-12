@@ -47,4 +47,5 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.plenv/bin:$PATH"
 eval "$(plenv init -)"
 
-#[[ -s /home/jason/.nvm/nvm.sh ]] && . /home/jason/.nvm/nvm.sh # This loads NVM
+# nvm
+source ~/.nvm/nvm.sh
