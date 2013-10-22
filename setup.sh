@@ -39,9 +39,9 @@ chsh -s /bin/zsh
 #curl -kL http://install.perlbrew.pl | bash
 #echo "perlbrew done. pls install perl.."
 
-#echo "Installing nvm.."
-#curl https://raw.github.com/creationix/nvm/master/install.sh | sh
-#echo "nvm done. pls install node.."
+echo "Checking out nvm and setting up environment.."
+git clone https://github.com/creationix/nvm.git ~/.nvm
+echo "nvm done. pls install node.."
 
 echo
 echo "Install zlib and readline for rails first.."
