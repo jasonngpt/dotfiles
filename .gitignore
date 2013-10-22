@@ -1,0 +1,5 @@
+# Log Files
+*.log
+
+# irssi autorun links
+irssi/scripts/autorun/*
