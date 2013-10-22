@@ -21,6 +21,14 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
+    autoconnect = "no";
+  },
+  {
+    address = "irc.mozilla.org";
+    chatnet = "Mozilla";
+    port = "6697";
+    use_ssl = "yes";
+    ssl_verify = "no";
     autoconnect = "yes";
   }
 );
@@ -66,7 +74,13 @@ chatnets = {
   SpotChat = { type = "IRC"; };
   FreeNode = {
     type = "IRC";
-    autosendcmd = "/msg NickServ identify password; wait 2000";
+    nick = "simplon";
+    autosendcmd = "/msg nickserv identify password; wait 2000";
+  };
+  Mozilla = {
+    type = "IRC";
+    nick = "jasonngpt";
+    autosendcmd = "msg nickserv identify password; wait 2000";
   };
 };
 
@@ -75,6 +89,7 @@ channels = (
   { name = "#ubuntu-sg"; chatnet = "FreeNode"; autojoin = "no"; }
   { name = "#linuxmint-help"; chatnet = "SpotChat"; autojoin = "no"; }
   { name = "#wdtv"; chatnet = "DALnet"; autojoin = "no"; }
+  { name = "#mozsg"; chatnet = "Mozilla"; autojoin = "no"; }
 );
 
 aliases = {
@@ -239,9 +254,9 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Jason"; user_name = "simplon"; nick = "simplon"; };
+  core = { real_name = "Jason Ng PT"; user_name = "jasonngpt"; nick = "jasonngpt"; };
   "fe-text" = { actlist_sort = "refnum"; term_force_colors = "yes"; };
-  "irc/core" = { alternate_nick = "simplon_pong"; };
+  "irc/core" = { alternate_nick = "simplon"; };
   "fe-common/core" = {
     timestamps = "yes";
     autocreate_own_query = "no";
