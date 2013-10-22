@@ -43,7 +43,9 @@ unsetopt correct_all
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# Perlbrew
-source ~/perl5/perlbrew/etc/bashrc
+# plenv
+export PATH="$HOME/.plenv/bin:$PATH"
+eval "$(plenv init -)"
 
-[[ -s /home/jason/.nvm/nvm.sh ]] && . /home/jason/.nvm/nvm.sh # This loads NVM
+# nvm
+source ~/.nvm/nvm.sh

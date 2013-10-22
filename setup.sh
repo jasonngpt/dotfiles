@@ -5,12 +5,15 @@
 clear
 echo "Welcome to Setup Script"
 echo
-echo "Starting to Install git, vim, tmux, zsh.."
-sudo apt-get install git vim tmux zsh irssi
+echo "Starting to Install git, vim, tmux, zsh, irssi, curl, terminator and g++ for compiling.."
+sudo apt-get install git vim tmux zsh irssi curl terminator g++
 
 echo
 echo "Checking out Jason Ng PT dotfiles.."
 git clone https://github.com/jasonngpt/dotfiles.git ~/.dotfiles
+
+echo "Cloning Vundle from Github.."
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 echo
 echo "Checking out oh-my-zsh.."
@@ -23,6 +26,10 @@ ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/irssi ~/.irssi
+
+echo 
+echo ":BundleInstall vim plugins from Vundle.."
+vim +BundleInstall +qall
 
 echo
 echo "Creating links for irssi autorun scripts"
@@ -37,13 +44,9 @@ echo
 echo "Changing Shell for User to zsh.."
 chsh -s /bin/zsh
 
-echo "Installing perlbrew.."
-curl -kL http://install.perlbrew.pl | bash
-echo "perlbrew done. pls install perl.."
-
-echo "Installing nvm.."
-curl https://raw.github.com/creationix/nvm/master/install.sh | sh
-echo "nvm done. pls install node.."
+#echo "Installing perlbrew.."
+#curl -kL http://install.perlbrew.pl | bash
+#echo "perlbrew done. pls install perl.."
 
 echo
 echo "Install zlib and readline for rails first.."
@@ -55,5 +58,18 @@ echo "Checking out ruby-build.."
 git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo "rbenv done and configured. pls install new ruby version i.e. rbenv install 2.0.0-p0"
 
+echo "Cloning plenv and setting up environment.."
+git clone git://github.com/tokuhirom/plenv.git ~/.plenv
+echo "Cloning perl-build.."
+git clone git://github.com/tokuhirom/Perl-Build.git ~/.plenv/plugins/perl-build/
+echo "plenv done and configured. pls install new perl version i.e. plenv install 5.18.1"
+
 echo "Change Irssi Password.."
 vi ~/.dotfiles/irssi/config
+
+echo "Installing additional libraries for nokogiri (ruby) and curb (ruby).."
+sudo apt-get install libxml2 libxml2-dev libxslt1-dev libcurl3 libcurl3-gnutls libcurl4-openssl-dev
+
+echo "Cloning nvm and setting up.."
+git clone https://github.com/creationix/nvm.git ~/.nvm
+echo "nvm done. pls install node"
