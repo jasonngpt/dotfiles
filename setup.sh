@@ -29,7 +29,7 @@ ln -s ~/.dotfiles/irssi ~/.irssi
 
 echo 
 echo ":BundleInstall vim plugins from Vundle.."
-vim
+vim +BundleInstall +qall
 
 echo
 echo "Changing Shell for User to zsh.."
@@ -38,10 +38,6 @@ chsh -s /bin/zsh
 #echo "Installing perlbrew.."
 #curl -kL http://install.perlbrew.pl | bash
 #echo "perlbrew done. pls install perl.."
-
-echo "Checking out nvm and setting up environment.."
-git clone https://github.com/creationix/nvm.git ~/.nvm
-echo "nvm done. pls install node.."
 
 echo
 echo "Install zlib and readline for rails first.."
@@ -64,3 +60,7 @@ vi ~/.dotfiles/irssi/config
 
 echo "Installing additional libraries for nokogiri (ruby) and curb (ruby).."
 sudo apt-get install libxml2 libxml2-dev libxslt1-dev libcurl3 libcurl3-gnutls libcurl4-openssl-dev
+
+echo "Cloning nvm and setting up.."
+git clone https://github.com/creationix/nvm.git ~/.nvm
+echo "nvm done. pls install node"

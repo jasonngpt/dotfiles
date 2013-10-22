@@ -47,5 +47,5 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.plenv/bin:$PATH"
 eval "$(plenv init -)"
 
-# Loads nvm upon login
+# nvm
 source ~/.nvm/nvm.sh
