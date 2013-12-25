@@ -26,7 +26,7 @@ if has('mouse')
 endif
 
 " tabspace
-set ts=4 sts=4 sw=4 noexpandtab
+set ts=2 sts=2 sw=2 noexpandtab
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
