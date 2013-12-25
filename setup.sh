@@ -34,6 +34,7 @@ vim +BundleInstall +qall
 
 echo
 echo "Creating links for irssi autorun scripts"
+mkdir ~/.dotfiles/irssi/scripts/autorun
 ln -s ~/.dotfiles/irssi/scripts/nickcolor.pl ~/.dotfiles/irssi/scripts/autorun/nickcolor.pl
 ln -s ~/.dotfiles/irssi/scripts/highlite.pl ~/.dotfiles/irssi/scripts/autorun/highlite.pl
 ln -s ~/.dotfiles/irssi/scripts/irssinotifier.pl ~/.dotfiles/irssi/scripts/autorun/irssinotifier.pl
