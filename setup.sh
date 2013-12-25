@@ -75,3 +75,8 @@ sudo apt-get install libxml2 libxml2-dev libxslt1-dev libcurl3 libcurl3-gnutls l
 echo "Cloning nvm and setting up.."
 git clone https://github.com/creationix/nvm.git ~/.nvm
 echo "nvm done. pls install node"
+
+echo "Adding F.lux.."
+sudo add-apt-repository ppa:kilian/f.lux
+sudo apt-get update && install fluxgui
+echo "flux installed.. pls configure it with gui"
