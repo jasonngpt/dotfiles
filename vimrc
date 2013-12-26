@@ -8,6 +8,8 @@ Bundle 'gmarik/vundle'
 
 " Github repos
 Bundle 'tpope/vim-fugitive'
+"Bundle 'wincent/Command-T'
+Bundle 'scrooloose/nerdtree'
 
 filetype plugin indent on
 
