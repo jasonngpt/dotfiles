@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 "Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-surround'
 
 filetype plugin indent on
 
