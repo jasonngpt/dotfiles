@@ -8,10 +8,9 @@ Bundle 'gmarik/vundle'
 
 " Github repos
 Bundle 'tpope/vim-fugitive'
-"Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
-Bundle 'msanders/snipmate.vim'
+Bundle 'garbas/vim-snipmate'
 
 filetype plugin indent on
 
