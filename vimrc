@@ -11,6 +11,7 @@ Bundle 'tpope/vim-fugitive'
 "Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
+Bundle 'msanders/snipmate.vim'
 
 filetype plugin indent on
 
