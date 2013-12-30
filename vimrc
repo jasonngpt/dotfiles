@@ -10,7 +10,12 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
+Bundle 'kien/ctrlp.vim'
+" Vim Snipmate and dependencies
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
 
 filetype plugin indent on
 
