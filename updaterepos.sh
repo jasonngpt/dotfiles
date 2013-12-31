@@ -32,3 +32,9 @@ git pull origin
 echo "Updating nvm.."
 cd ~/.nvm
 git pull origin
+
+echo "Updating personal dotfiles.."
+cd ~/.dotfiles
+git pull origin master
+echo "Install vim plugins with Vundle with BundleInstall.."
+vim +BundleInstall +qall
