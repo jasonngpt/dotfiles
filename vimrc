@@ -12,6 +12,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'gregsexton/MatchTag'
+Bundle 'scrooloose/nerdcommenter'
 " Vim Snipmate and dependencies
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
