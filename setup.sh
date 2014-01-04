@@ -78,5 +78,5 @@ echo "nvm done. pls install node"
 
 echo "Adding F.lux.."
 sudo add-apt-repository ppa:kilian/f.lux
-sudo apt-get update && install fluxgui
+sudo apt-get update && sudo apt-get install fluxgui
 echo "flux installed.. pls configure it with gui"
