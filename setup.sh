@@ -40,7 +40,6 @@ ln -s ~/.dotfiles/irssi/scripts/highlite.pl ~/.dotfiles/irssi/scripts/autorun/hi
 ln -s ~/.dotfiles/irssi/scripts/irssinotifier.pl ~/.dotfiles/irssi/scripts/autorun/irssinotifier.pl
 ln -s ~/.dotfiles/irssi/scripts/tmux_away.pl ~/.dotfiles/irssi/scripts/autorun/tmux_away.pl
 ln -s ~/.dotfiles/irssi/scripts/trackbar.pl ~/.dotfiles/irssi/scripts/autorun/trackbar.pl
-ln -s ~/.dotfiles/irssi/scripts/nickcolor.pl ~/.dotfiles/irssi/scripts/autorun/nickcolor.pl
 
 echo
 echo "Changing Shell for User to zsh.."
