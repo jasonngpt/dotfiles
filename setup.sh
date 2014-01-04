@@ -10,7 +10,7 @@ sudo apt-get install git vim tmux zsh irssi curl terminator g++
 
 echo
 echo "Checking out Jason Ng PT dotfiles.."
-git clone https://github.com/jasonngpt/dotfiles.git ~/.dotfiles
+git clone git@github.com:jasonngpt/dotfiles.git ~/.dotfiles
 
 echo "Cloning Vundle from Github.."
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
