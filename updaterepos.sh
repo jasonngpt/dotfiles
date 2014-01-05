@@ -29,9 +29,9 @@ echo "Cloning perl-build.."
 cd ~/.plenv/plugins/perl-build
 git pull origin
 
-echo "Updating nvm.."
-cd ~/.nvm
-git pull origin
+#echo "Updating nvm.."
+#cd ~/.nvm
+#git pull origin
 
 echo "Updating personal dotfiles.."
 cd ~/.dotfiles
