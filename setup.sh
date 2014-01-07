@@ -75,3 +75,7 @@ echo "Adding F.lux.."
 sudo add-apt-repository ppa:kilian/f.lux
 sudo apt-get update && sudo apt-get install fluxgui
 echo "flux installed.. pls configure it with gui"
+
+echo "Installing databases i.e. postgresql and sqlite3.."
+sudo apt-get install postgresql libpq-dev sqlite3 libsqlite3-dev
+echo "databases installed"
