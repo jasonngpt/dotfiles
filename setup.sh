@@ -13,7 +13,7 @@ echo "Checking out Jason Ng PT dotfiles.."
 git clone git@github.com:jasonngpt/dotfiles.git ~/.dotfiles
 
 echo "Cloning Vundle from Github.."
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git clone git@github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 echo
 echo "Checking out oh-my-zsh.."
