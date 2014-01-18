@@ -48,4 +48,4 @@ export PATH="$HOME/.plenv/bin:$PATH"
 eval "$(plenv init -)"
 
 # nvm
-#source ~/.nvm/nvm.sh
+source ~/.nvm/nvm.sh

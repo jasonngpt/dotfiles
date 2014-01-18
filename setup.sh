@@ -67,9 +67,9 @@ vi ~/.dotfiles/irssi/config
 echo "Installing additional libraries for nokogiri (ruby) and curb (ruby).."
 sudo apt-get install libxml2 libxml2-dev libxslt1-dev libcurl3 libcurl3-gnutls libcurl4-openssl-dev
 
-#echo "Cloning nvm and setting up.."
-#git clone https://github.com/creationix/nvm.git ~/.nvm
-#echo "nvm done. pls install node"
+echo "Cloning nvm and setting up.."
+git clone git@github.com/creationix/nvm.git ~/.nvm
+echo "nvm done. pls install node"
 
 echo "Adding F.lux.."
 sudo add-apt-repository ppa:kilian/f.lux
