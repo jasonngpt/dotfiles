@@ -7,3 +7,8 @@ Repository of dotfiles used personally
 
 ```sh
 setup.sh
+
+# Updating Git repos:
+
+```sh
+updaterepos.sh
