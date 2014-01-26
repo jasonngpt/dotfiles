@@ -25,6 +25,8 @@ filetype plugin indent on
 set backspace=indent,eol,start
 
 set nobackup 	" keep backup file
+set nowritebackup
+set noswapfile
 set history=50	" keep 50 lines of command line history
 set ruler	" show cursor position all the time
 set showcmd	" display incomplete commands
