@@ -49,3 +49,10 @@ eval "$(plenv init -)"
 
 # nvm
 source ~/.nvm/nvm.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### GO and GOPATH
+export PATH="$PATH:/usr/local/go/bin:/$GOPATH/bin"
+export GOPATH="$HOME/workspace/golang"
