@@ -44,6 +44,8 @@ set ts=2 sts=2 sw=2 noexpandtab
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
+" Map the set list toggle as a shortcut
+nmap <leader>l :set list!<CR>
 
 "Invisible character colors
 highlight NonText guifg=#4a4a59
