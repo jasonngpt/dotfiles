@@ -11,3 +11,5 @@
   co = checkout
   st = status
   ci = commit
+[core]
+	editor = vim
