@@ -5,8 +5,8 @@
 clear
 echo "Welcome to Setup Script"
 echo
-echo "Starting to Install git, vim, tmux, zsh, irssi, curl and g++ for compiling.."
-sudo apt-get install git vim tmux zsh irssi curl g++
+echo "Starting to Install git, vim, tmux, zsh, irssi, curl, autojump and g++ for compiling.."
+sudo apt-get install git vim tmux zsh irssi curl g++ autojump
 
 echo
 echo "Checking out Jason Ng PT dotfiles.."

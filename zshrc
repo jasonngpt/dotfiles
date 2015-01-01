@@ -56,3 +56,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 ### GO and GOPATH
 export PATH="$PATH:/usr/local/go/bin:/$GOPATH/bin"
 export GOPATH="$HOME/workspace/golang"
+
+### autojump
+. /usr/share/autojump/autojump.zsh
