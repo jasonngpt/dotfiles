@@ -1,4 +1,5 @@
 servers = (
+  { address = "chat.taucher.net"; chatnet = "Taucher"; port = "6667"; autoconnect = "yes"; },
   { address = "open.ircnet.net"; chatnet = "IRCnet"; port = "6667"; },
   { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
   { 
@@ -34,6 +35,15 @@ servers = (
 );
 
 chatnets = {
+  Taucher = {
+    type = "IRC";
+    max_kicks = "4";
+    max_msgs = "5";
+    max_whois = "4";
+    max_query_chans = "5";
+    nick = "simplon";
+    autosendcmd = "/msg nickserv identify password; wait 2000";
+  };
   IRCnet = {
     type = "IRC";
     max_kicks = "4";
@@ -85,10 +95,11 @@ chatnets = {
 };
 
 channels = (
-  { name = "#go-nuts"; chatnet = "FreeNode"; autojoin = "yes"; }
-  { name = "#ruby-lang"; chatnet = "FreeNode"; autojoin = "yes"; }
-  { name = "#rubyonrails"; chatnet = "FreeNode"; autojoin = "yes"; }
-  { name = "#ubuntu-sg"; chatnet = "FreeNode"; autojoin = "yes"; }
+  { name = "#bsd"; chatnet = "Taucher"; autojoin = "no"; }
+  { name = "#go-nuts"; chatnet = "FreeNode"; autojoin = "no"; }
+  { name = "#ruby-lang"; chatnet = "FreeNode"; autojoin = "no"; }
+  { name = "#rubyonrails"; chatnet = "FreeNode"; autojoin = "no"; }
+  { name = "#ubuntu-sg"; chatnet = "FreeNode"; autojoin = "no"; }
   { name = "#wdtv"; chatnet = "DALnet"; autojoin = "no"; }
   { name = "#mozsg"; chatnet = "Mozilla"; autojoin = "no"; }
 );
