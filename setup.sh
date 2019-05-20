@@ -77,14 +77,3 @@ echo
 echo "Cloning nvm and setting up.."
 git clone git://github.com/creationix/nvm.git ~/.nvm
 echo "nvm done. pls install node"
-
-echo
-echo "Adding F.lux.."
-sudo add-apt-repository ppa:kilian/f.lux
-sudo apt-get update && sudo apt-get install fluxgui
-echo "flux installed.. pls configure it with gui"
-
-echo
-echo "Installing databases i.e. postgresql and sqlite3.."
-sudo apt-get install postgresql libpq-dev sqlite3 libsqlite3-dev
-echo "databases installed"
