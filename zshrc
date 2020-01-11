@@ -40,22 +40,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
-# plenv
-export PATH="$HOME/.plenv/bin:$PATH"
-eval "$(plenv init -)"
-
-# nvm
-source ~/.nvm/nvm.sh
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-### GO and GOPATH
-export PATH="$PATH:/usr/local/go/bin:/$GOPATH/bin"
-export GOPATH="$HOME/workspace/golang"
 
 ### autojump
 . /usr/share/autojump/autojump.zsh

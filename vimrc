@@ -4,7 +4,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
+Bundle 'VundleVim/vundle'
 
 " Github repos
 Bundle 'tpope/vim-fugitive'

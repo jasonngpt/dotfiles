@@ -14,7 +14,7 @@ git clone git@github.com:jasonngpt/dotfiles.git ~/.dotfiles
 
 echo
 echo "Cloning Vundle from Github.."
-git clone git@github.com:gmarik/Vundle.vim.git ~/.vim/bundle/vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle
 
 echo
 echo "Checking out oh-my-zsh.."
@@ -27,8 +27,6 @@ ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/irssi ~/.irssi
-ln -s ~/.dotfiles/rails/rspec ~/.rspec
-ln -s ~/.dotfiles/rails/gemrc ~/.gemrc
 
 echo 
 echo ":BundleInstall vim plugins from Vundle.."
@@ -48,32 +46,5 @@ echo "Changing Shell for User to zsh.."
 chsh -s /bin/zsh
 
 echo
-echo "Install zlib and readline for rails first.."
-sudo apt-get install libssl-dev zlib1g-dev libreadline-dev
-
-echo
-echo "Checking out rbenv and setting up environment.."
-git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
-echo "Checking out ruby-build.."
-git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-echo "rbenv done and configured. pls install new ruby version i.e. rbenv install 2.0.0-p0"
-
-echo
-echo "Cloning plenv and setting up environment.."
-git clone git://github.com/tokuhirom/plenv.git ~/.plenv
-echo "Cloning perl-build.."
-git clone git://github.com/tokuhirom/Perl-Build.git ~/.plenv/plugins/perl-build/
-echo "plenv done and configured. pls install new perl version i.e. plenv install 5.18.1"
-
-echo
 echo "Change Irssi Password.."
 vi ~/.dotfiles/irssi/config
-
-echo
-echo "Installing additional libraries for nokogiri (ruby) and curb (ruby).."
-sudo apt-get install libxml2 libxml2-dev libxslt1-dev libcurl3 libcurl3-gnutls libcurl4-openssl-dev
-
-echo
-echo "Cloning nvm and setting up.."
-git clone git://github.com/creationix/nvm.git ~/.nvm
-echo "nvm done. pls install node"
